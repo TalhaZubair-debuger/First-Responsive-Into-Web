@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./assets/styles/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content1">
+            <div class="logo"><a href="#">CodingTalha</a></div>
+
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h1>Services</h1>
+        </div>
+
+        <div class="services">
+
+            <div class="a1">
+                <h2>Web Development</h2>
+                <p>We have several packages for you UI design and utilizing our best, We can provide with 3 order options</p>
+                <br/>
+                <div class="a">
+                    <div class="a2">
+                        <p>For website consisting of 1-3 pages:</p>
+                        <button>Click here</button>
+                    </div>
+                    <div class="a2">
+                        <p>For website consisting of 3-10 pages:</p>
+                        <button>Click here</button>
+                    </div>
+                    <div class="a2">
+                        <p>For website consisting of 10+ pages:</p>
+                        <button>Click here</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="a1">
+                <h2>App Development</h2>
+                <p>We have several different App Development style, We can provide with 3 order options</p>
+                <br/>
+                <div class="a">
+                    <div class="a2">
+                        <p>For simple Android app:</p>
+                        <button>Click here</button>
+                    </div>
+                    <div class="a2">
+                        <p>For networking Android app alongwith back-end:</p>
+                        <button>Click here</button>
+                    </div>
+                    <div class="a2">
+                        <p>For Android and IOS compatible app alongwith back-end:</p>
+                        <button>Click here</button>
+                    </div>
+                </div>
+            </div>
+            <div class="a1">
+                <h2>SEO</h2>
+                <p>We have different kinds of SEO styles and can provide you custum orders too, We can provide with 3 order options</p>
+                <br/>
+                <div class="a">
+                    <div class="a2">
+                        <p>For On Page SEO of words 1-5:</p>
+                        <button>Click here</button>
+                    </div>
+                    <div class="a2">
+                        <p>For On Page and Off Page SEO of words 1-10:</p>
+                        <button>Click here</button>
+                    </div>
+                    <div class="a2">
+                        <p>For yor custom orders:</p>
+                        <button>Click here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo-icons">
+            <div class="logo-img">
+                <a href="https://www.facebook.com/talha.zubairtz/"><img src="./assets/img/fb2.png" alt=""></a>
+            </div>
+            <div class="logo-img">
+                <a href="https://www.instagram.com/talha_zubr/"><img src="./assets/img/insta2.jpg" alt=""></a>
+            </div>
+            <div class="logo-img">
+                <a href="https://twitter.com/TalhaZu96052741"><img src="./assets/img/t2.png" alt=""></a>
+            </div>
+            <div class="logo-img"><img src="./assets/img/wt2.png" alt=""></div>
+        </div>
+        <p>All rights reserved &copy;</p>
+        <p>talhazubair.info@gmail.com</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        const body = document.querySelector('body');
+        const menu = document.querySelector('.menu-list');
+        const navbar = document.querySelector('.navbar');
+        const menuBtn = document.querySelector('.menu-btn');
+        const cancelBtn = document.querySelector('.cancel-btn');
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll");
+
+
+        }
+    </script>
+</body>
+
+</html>
